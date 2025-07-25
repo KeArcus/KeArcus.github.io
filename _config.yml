@@ -28,6 +28,20 @@ github_username: KeArcus
 
 # Build settings
 theme: minima
+
+# Header Pages - 配置顶栏导航
+header_pages:
+  - about.markdown
+  - archives.markdown
+  - tags.markdown
+
+# Minima theme settings
+minima:
+  skin: auto # 可选：auto, dark, solarized, solarized-dark
+  social_links:
+    github: KeArcus
+    email: caoke020@gmail.com
+
 # Recommended plugins
 plugins:
   - jekyll-feed

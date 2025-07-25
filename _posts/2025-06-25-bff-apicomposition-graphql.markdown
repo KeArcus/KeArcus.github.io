@@ -3,6 +3,7 @@ layout: post
 title:  "聊聊API聚合：BFF、GraphQL和API Composition的选择之道"
 date:   2025-06-25 08:22:11 +0000
 categories: architecture api
+tags: [BFF, GraphQL, API设计, 微服务, 后端架构]
 ---
 
 最近在做架构设计时，经常遇到一个问题：前端需要调用多个后端服务来完成一个业务流程，这时候就涉及到API聚合的选择。今天想跟大家分享一下我对BFF、GraphQL和API Composition这三种主流方案的理解和思考。
