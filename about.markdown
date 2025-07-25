@@ -4,15 +4,41 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## 👋 Hi there!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+欢迎来到我的技术博客！我是一名热爱技术的软件工程师，专注于后端架构设计和系统优化。
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## 🚀 关于我
+
+- **技术栈**：主要使用 Go、Java、Python 进行后端开发
+- **关注领域**：微服务架构、API设计、分布式系统、性能优化
+- **工作经验**：在互联网公司从事后端开发和架构设计工作
+- **技术理念**：相信简单的设计往往是最好的设计
 
 
-[jekyll-organization]: https://github.com/jekyll
+## 💡 写作初衷
+
+技术的价值在于分享和传播。通过写博客，我希望能够：
+
+- 记录自己的技术成长轨迹
+- 分享实践中的经验和教训
+- 与同行交流学习，共同进步
+- 为技术社区贡献一份力量
+
+## 📫 联系方式
+
+如果你对文章内容有疑问，或者想要交流技术话题，欢迎通过以下方式联系我：
+
+- **GitHub**: [KeArcus](https://github.com/KeArcus)
+
+## 🎯 近期关注
+
+最近在深入研究和学习：
+
+- English
+- API网关和服务聚合模式
+- 高并发系统优化
+
+---
+
+*感谢你花时间了解我的博客，希望这里的内容对你有所帮助！*
