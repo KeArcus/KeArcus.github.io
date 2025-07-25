@@ -4,22 +4,254 @@ layout: page
 ---
 
 <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
+  .error-container {
+    margin: 40px auto;
+    max-width: 800px;
     text-align: center;
+    padding: 20px;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
+
+  .error-code {
+    font-size: 8em;
+    font-weight: bold;
+    color: #007acc;
+    margin: 20px 0;
     line-height: 1;
-    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .error-title {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+  }
+
+  .error-message {
+    font-size: 1.2em;
+    color: #666;
+    margin: 30px 0;
+    line-height: 1.6;
+  }
+
+  .search-box {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+
+  .search-input {
+    width: 60%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .search-input:focus {
+    border-color: #007acc;
+  }
+
+  .search-btn {
+    padding: 12px 25px;
+    margin-left: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+
+  .search-btn:hover {
+    background: #005a99;
+  }
+
+  .helpful-links {
+    margin: 40px 0;
+  }
+
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  .link-card {
+    padding: 20px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #007acc;
+  }
+
+  .link-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .link-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .link-desc {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  .back-home {
+    margin: 40px 0;
+  }
+
+  .home-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-btn:hover {
+    background: #005a99;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: white;
+  }
+
+  .fun-fact {
+    margin: 40px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .error-code {
+      font-size: 5em;
+    }
+
+    .search-input {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    .search-btn {
+      margin-left: 0;
+    }
+
+    .links-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="error-container">
+  <div class="error-code">404</div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <h1 class="error-title">🤔 页面走丢了</h1>
+
+  <p class="error-message">
+    抱歉，你访问的页面可能已经搬家、改名或者正在度假中...<br>
+    不过别担心，让我帮你找到想要的内容！
+  </p>
+
+  <div class="search-box">
+    <h3>🔍 搜索一下试试</h3>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+      <input type="hidden" name="sitesearch" value="{{ site.url }}">
+      <input type="text" name="q" class="search-input" placeholder="输入关键词搜索本站内容...">
+      <button type="submit" class="search-btn">搜索</button>
+    </form>
+  </div>
+
+  <div class="helpful-links">
+    <h3>📚 或者看看这些内容</h3>
+    <div class="links-grid">
+      <a href="{{ '/' | relative_url }}" class="link-card">
+        <div class="link-icon">🏠</div>
+        <div class="link-title">首页</div>
+        <div class="link-desc">回到博客首页，查看最新文章</div>
+      </a>
+
+      <a href="{{ '/archives/' | relative_url }}" class="link-card">
+        <div class="link-icon">📖</div>
+        <div class="link-title">文章归档</div>
+        <div class="link-desc">按时间浏览所有技术文章</div>
+      </a>
+
+      <a href="{{ '/tags/' | relative_url }}" class="link-card">
+        <div class="link-icon">🏷️</div>
+        <div class="link-title">标签分类</div>
+        <div class="link-desc">按技术主题查找相关文章</div>
+      </a>
+
+      <a href="{{ '/about/' | relative_url }}" class="link-card">
+        <div class="link-icon">👨‍💻</div>
+        <div class="link-title">关于我</div>
+        <div class="link-desc">了解博主和博客的更多信息</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="fun-fact">
+    <h3>💡 有趣的事实</h3>
+    <p>HTTP 404 错误是以万维网之父蒂姆·伯纳斯-李工作的办公室号码命名的。<br>
+      虽然这个说法其实是个都市传说，但404确实是最著名的HTTP状态码之一！</p>
+  </div>
+
+  <div class="back-home">
+    <a href="{{ '/' | relative_url }}" class="home-btn">
+      🏠 返回首页
+    </a>
+  </div>
 </div>
+
+<script>
+  // 添加一些交互效果
+  document.addEventListener('DOMContentLoaded', function () {
+    // 为搜索框添加回车键支持
+    const searchInput = document.querySelector('.search-input');
+    if (searchInput) {
+      searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          this.closest('form').submit();
+        }
+      });
+    }
+
+    // 添加页面加载动画
+    const container = document.querySelector('.error-container');
+    if (container) {
+      container.style.opacity = '0';
+      container.style.transform = 'translateY(20px)';
+
+      setTimeout(() => {
+        container.style.transition = 'all 0.6s ease';
+        container.style.opacity = '1';
+        container.style.transform = 'translateY(0)';
+      }, 100);
+    }
+  });
+</script>
