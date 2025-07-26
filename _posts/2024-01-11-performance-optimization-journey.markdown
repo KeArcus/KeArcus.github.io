@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "从月耗18k到极致降本：一次资源位服务性能优化的完整复盘"
+title: "从月耗18k到极致降本：一次服务性能优化的完整复盘"
 date: 2024-01-11 14:30:00 +0000
 categories: performance optimization
 tags: [性能优化, Go语言, 成本控制, JSON解析, GC调优]
