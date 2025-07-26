@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "聊聊API聚合：BFF、GraphQL和API Composition的选择之道"
-date:   2025-06-25 08:22:11 +0000
+date:   2020-01-25 08:22:11 +0000
 categories: architecture api
 tags: [BFF, GraphQL, API设计, 微服务, 后端架构]
 ---
